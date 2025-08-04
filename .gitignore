@@ -1,5 +1,9 @@
 .env
 
+# notes
+print-tips-n-tricks.md
+
+
 # Logs
 logs
 *.log
