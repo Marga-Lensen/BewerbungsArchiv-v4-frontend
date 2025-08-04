@@ -1,0 +1,49 @@
+.app-layout {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.floating-home {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background-color: #ffffff67;
+  color: #3d035c;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.floating-home:hover .nav-dropdown {
+  display: flex;
+  flex-direction: column;
+  /* font-size: .8em; */
+}
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background-color: #fff8ffa6;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-dropdown button {
+  background: transparent;
+  border: none;
+  padding: 0.4rem;
+  text-align: left;
+  color: #3d035c;
+  cursor: pointer;
+}
+
+.nav-dropdown button:hover {
+  color: #7012bd;
+}

@@ -1,0 +1,48 @@
+// HomePage.scss
+.homepage {
+  text-align: center;
+  padding: 2rem;
+  color: #fefefe;
+
+  h1 {
+    margin-bottom: 2rem;
+    color: #d4af37; // gold-like title
+  }
+
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .option-card {
+    background-color: #6a6ab8ab;
+    border: 2px solid #816694;
+    border-radius: 12px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 10px rgba(205, 179, 12, 0.2);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+      background-color: #7d71b4;
+    }
+
+    h2 {
+      margin: 0.8rem 0;
+      color: #f4f4f4;
+    }
+
+    p {
+      color: #ccc;
+    }
+
+    svg {
+      color: #d4af37;
+    }
+  }
+}
